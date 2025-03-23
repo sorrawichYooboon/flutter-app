@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/widgets/navbar_widget.dart';
+import 'package:flutter_app/screens/todo_list_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,10 +23,7 @@ class _MyAppState extends State<MyApp> {
           brightness: Brightness.dark,
         ),
       ),
-      home: Scaffold(
-        appBar: AppBar(title: const Text('Color Scheme Example')),
-        bottomNavigationBar: NavbarWidget(),
-      ),
+      home: const TodoListScreen(),
     );
   }
 }
